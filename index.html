@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cooking | Master </title>
+    <!-- css link  -->
+    <link rel="stylesheet" href="style.css">
+    <!-- bootstrap link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+</head>
+<body>
+    
+<section id="food-area">
+          <!-- search area start -->
+    <nav class="navbar navbar-light ">
+      <div class="container-fluid justify-content-center">
+        <form id="submit" class="d-flex custom-search pt-5 ">
+          <input id="search-input" class="form-control me-2" id="custom-form" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success search-btn" type="submit">Search</button>
+        </form>
+      </div>
+    </nav>
+  <!-- search area end -->
+
+
+  <!-- body content area start -->
+
+  <!-- first food list  area start-->
+   <div id="vegan-food">
+      <div class="container pt-5">
+          <div class="row">
+          <!-- vegan-slad-blow  -->
+              <div class="col-md-3">
+                  <div id="vegan-inner" class="inner-food">
+                    <div class="card">
+                        <img src="image/vegan-salad-bowl.png" class="card-img-top" alt="Food">
+                        <div class="card-body">
+                          <p class="card-text text-center">Vegan salad bowl</p>
+                        </div>
+                      </div>
+                  </div>
+              </div>
+          <!-- vegan-slad-blow  -->
+  
+          <!-- chicken  sandwich -->
+              <div class="col-md-3">
+                  <div id="sandwich-inner" class="inner-food">
+                    <div class="card">
+                        <img src="image/chicken-sandwich.jpg" class="card-img-top" alt="Food">
+                        <div class="card-body">
+                          <p class="card-text text-center">chicken Sandwich</p>
+                        </div>
+                      </div>
+                  </div>
+              </div>
+          <!-- chicken  sandwich -->
+
+          <!-- MOMOs -->
+            <div class="col-md-3">
+              <div id="momo-inner" class="inner-food">
+                <div class="card">
+                    <img src="image/momos..jfif" class="card-img-top" alt="Food">
+                    <div class="card-body">
+                      <p class="card-text text-center">MOMO</p>
+                    </div>
+                  </div>
+              </div>
+          </div>
+          <!-- MOMOs -->
+
+          <!-- noodles -->
+              <div class="col-md-3">
+                  <div id="noodles-inner" class="inner-food">
+                    <div class="card">
+                        <img src="image/noodles.jpg" class="card-img-top" alt="Food">
+                        <div class="card-body">
+                          <p class="card-text text-center">buckwheat noodles</p>
+                        </div>
+                      </div>
+                  </div>
+              </div>
+          <!-- noodles -->
+
+          </div>
+       </div>
+      <!-- first food list  area end-->
+  
+      <!-- second food list area start -->
+      <div class="container pt-4">
+          <div class="row">
+          <!-- avocado food -->
+              <div class="col-md-3">
+                  <div id="avocado-inner" class="inner-food">
+                    <div class="card">
+                        <img src="image/avocado.jpg" class="card-img-top" alt="Food">
+                        <div class="card-body">
+                          <p class="card-text text-center">Avocado eassay.</p>
+                        </div>
+                      </div>
+                  </div>
+              </div>
+          <!-- avocado food -->
+
+          <!-- cabbage food -->
+              <div class="col-md-3">
+                  <div id="cabbage-inner" class="inner-food">
+                    <div class="card">
+                        <img src="image/cabbage.jpg" class="card-img-top" alt="Food">
+                        <div class="card-body">
+                          <p class="card-text text-center">Cabbage rolls</p>
+                        </div>
+                      </div>
+                  </div>
+              </div>
+          <!-- cabbage food -->
+
+          <!-- carrot soup -->
+              <div class="col-md-3">
+                  <div id="carrot-inner" class="inner-food">
+                    <div class="card">
+                        <img src="image/carrot-soup.jpg" class="card-img-top" alt="Food">
+                        <div class="card-body">
+                          <p class="card-text text-center">Carrot soup</p>
+                        </div>
+                      </div>
+                  </div>
+              </div>
+          <!-- carrot soup -->
+
+          <!-- mozzarella food -->
+              <div class="col-md-3">
+                  <div id="mozzarella-inner" class="inner-food">
+                    <div class="card">
+                        <img src="image/mozzarella.jpg" class="card-img-top" alt="Food">
+                        <div class="card-body">
+                          <p class="card-text text-center">Chorizo mozzarella</p>
+                        </div>
+                      </div>
+                  </div>
+              </div>
+          <!-- mozzarella food -->
+          </div>
+       </div>
+      <!-- second food list  area end-->
+   </div>
+   <div class="result-food"></div>
+   <div id="meal" ></div>
+</section>
+
+      <!-- vegan details start -->
+      <div id="vegan-details" class="inner-food-details justify-content-center">
+        <img src="image/vegan-salad-bowl.png" class="card-img-top" alt="food">
+       <div class="food-details-content">
+        <h2>Vegan salad bowl</h2>
+        <p>Ingredients</p>
+        <ul>
+            <li>1 tbsp olive oil </li>
+            <li>1 onion, finely chopped</li>
+            <li>2 garlic cloves , crushed</li>
+            <li>120g chorizo , diced</li>
+            <li>2 x 400g cans chopped tomatoes</li>
+            <li>1 tsp caster sugar</li>
+        </ul>
+       </div>
+       </div>
+      <!-- vegan details end -->
+
+    <!-- Chicken Sandwich details start -->
+        <div id="sandwich-details" class="inner-food-details justify-content-center">
+            <img src="image/chicken-sandwich.jpg" class="card-img-top" alt="food">
+           <div class="food-details-content">
+            <h2>Chicken Sandwich</h2>
+            <p>Ingredients</p>
+            <ul>
+                <li>1 tbsp olive oil </li>
+                <li>1 onion, finely chopped</li>
+                <li>2 garlic cloves , crushed</li>
+                <li>120g chorizo , diced</li>
+                <li>2 x 400g cans chopped tomatoes</li>
+                <li>1 tsp caster sugar</li>
+            </ul>
+           </div>
+           </div>
+    <!-- Chicken Sandwich details end -->
+
+    <!-- momo details start -->
+    <div id="momo-details" class="inner-food-details justify-content-center">
+        <img src="image/momos..jfif" class="card-img-top" alt="food">
+       <div class="food-details-content">
+        <h2>MOMO</h2>
+        <p>Ingredients</p>
+        <ul>
+            <li>1 tbsp olive oil </li>
+            <li>1 onion, finely chopped</li>
+            <li>2 garlic cloves , crushed</li>
+            <li>120g chorizo , diced</li>
+            <li>2 x 400g cans chopped tomatoes</li>
+            <li>1 tsp caster sugar</li>
+        </ul>
+       </div>
+       </div>
+    <!--  momo details end -->
+
+    <!-- noodles details start -->      
+    <div id="noodles-details" class="inner-food-details justify-content-center">
+        <img src="image/noodles.jpg" class="card-img-top" alt="food">
+       <div class="food-details-content">
+        <h2>buckwheat noodles</h2>
+        <p>Ingredients</p>
+        <ul>
+            <li>1 tbsp olive oil </li>
+            <li>1 onion, finely chopped</li>
+            <li>2 garlic cloves , crushed</li>
+            <li>120g chorizo , diced</li>
+            <li>2 x 400g cans chopped tomatoes</li>
+            <li>1 tsp caster sugar</li>
+        </ul>
+       </div>
+       </div>
+    <!--  noodles details end -->
+
+    <!-- avocado details start -->      
+    <div id="avocado-details" class="inner-food-details justify-content-center">
+        <img src="image/avocado.jpg" class="card-img-top" alt="food">
+       <div class="food-details-content">
+        <h2>Avocado eassay.</h2>
+        <p>Ingredients</p>
+        <ul>
+            <li>1 tbsp olive oil </li>
+            <li>1 onion, finely chopped</li>
+            <li>2 garlic cloves , crushed</li>
+            <li>120g chorizo , diced</li>
+            <li>2 x 400g cans chopped tomatoes</li>
+            <li>1 tsp caster sugar</li>
+        </ul>
+       </div>
+       </div>
+    <!--  avocado details end -->
+
+    <!-- cabbage details start -->      
+      <div id="cabbage-details" class="inner-food-details justify-content-center">
+        <img src="image/cabbage.jpg" class="card-img-top" alt="food">
+       <div class="food-details-content">
+        <h2>Cabbage rolls</h2>
+        <p>Ingredients</p>
+        <ul>
+            <li>1 tbsp olive oil </li>
+            <li>1 onion, finely chopped</li>
+            <li>2 garlic cloves , crushed</li>
+            <li>120g chorizo , diced</li>
+            <li>2 x 400g cans chopped tomatoes</li>
+            <li>1 tsp caster sugar</li>
+        </ul>
+       </div>
+       </div>
+    <!--  cabbage details end -->
+
+    <!-- carrot details start -->      
+    <div id="carrot-details" class="inner-food-details justify-content-center">
+        <img src="image/carrot-soup.jpg" class="card-img-top" alt="food">
+       <div class="food-details-content">
+        <h2>Carrot soup</h2>
+        <p>Ingredients</p>
+        <ul>
+            <li>1 tbsp olive oil </li>
+            <li>1 onion, finely chopped</li>
+            <li>2 garlic cloves , crushed</li>
+            <li>120g chorizo , diced</li>
+            <li>2 x 400g cans chopped tomatoes</li>
+            <li>1 tsp caster sugar</li>
+        </ul>
+       </div>
+       </div>
+    <!--  carrot details end -->
+
+    <!-- mozzarella details start -->      
+     <div id="mozzarella-details" class="inner-food-details justify-content-center">
+        <img src="image/mozzarella.jpg" class="card-img-top" alt="food">
+       <div class="food-details-content">
+        <h2>Carrot soup</h2>
+        <p>Ingredients</p>
+        <ul>
+            <li>1 tbsp olive oil </li>
+            <li>1 onion, finely chopped</li>
+            <li>2 garlic cloves , crushed</li>
+            <li>120g chorizo , diced</li>
+            <li>2 x 400g cans chopped tomatoes</li>
+            <li>1 tsp caster sugar</li>
+        </ul>
+       </div>
+       </div>
+    <!--  mozzarella details end -->
+
+
+    <!-- body content area end -->
+
+
+    
+
+    
+
+
+
+
+
+    
+    <!-- javascript area Start -->
+    <script src="script.js"></script>
+</body>
+</html>

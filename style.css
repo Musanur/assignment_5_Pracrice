@@ -1,0 +1,58 @@
+body{
+    background-color: #EDD263 !important;
+}
+/* first&second food list css start */
+.inner-food .card img {
+    height: 160px;
+}
+/* first&second food list css end */
+
+
+/* all food inner start  */
+
+.inner-food-details{
+    padding: 11px 450px;
+    border-radius: 20px;
+}
+.food-details-content{
+    padding-left: 20px;
+    background-color: aliceblue;
+    padding-bottom: 20px;
+    border-radius: 10;
+}
+/* all food inner end  */
+
+/* all Food details start */
+#vegan-details{
+    display: none;
+}
+
+#sandwich-details{
+    display: none;
+}
+
+#momo-details{
+    display: none;
+}
+
+#noodles-details{
+    display: none;
+}
+
+#avocado-details{
+    display: none;
+}
+
+#cabbage-details{
+    display: none;
+}
+
+#carrot-details{
+    display: none;
+}
+
+#mozzarella-details{
+    display: none;
+}
+
+/* all Food details end */
