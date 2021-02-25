@@ -23,9 +23,15 @@ function searchMeal(e){
 const searchFood = foods => {
     const foodContainer = document.getElementById('food-container');
     foods.forEach(element => {
-        const li = document.createElement("li");
-        li.innerText = element.strMeal;
-        foodContainer.appendChild(li)
+        const foodDiv = document.createElement("div");
+        foodDiv.className = "inner-food card"
+        foodDiv.innerHTML = `
+            <img src="${element.strMealThumb}" class="card-img-top" alt="Food">
+            <div class="card-body">
+                <p class="card-text text-center">${element.strMeal}</p>
+            </div>
+        `;
+        foodContainer.appendChild(foodDiv)
     });
 }
 
@@ -36,14 +42,7 @@ submit.addEventListener('submit', searchMeal);
 
 
 
-
-
-
-
-
-
-
-    // allFood event handler start
+// allFood event handler start
     allEventHandler('vegan-inner', 'vegan-details')
     allEventHandler('sandwich-inner', 'sandwich-details')
     allEventHandler('momo-inner', 'momo-details')
