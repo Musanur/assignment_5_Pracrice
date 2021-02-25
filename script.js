@@ -2,8 +2,6 @@
 // food search start
 const search = document.getElementById('search-input');
 const submit = document.getElementById('submit');
-const mealElement = document.getElementById('meal');
-const resultFood = document.getElementById('resutl-food');
 
 
 // searchMeal
@@ -18,15 +16,31 @@ function searchMeal(e){
         fetch(`https://www.themealdb.com/api/json/v1/1/search.php?s=${term}
         `)
         .then(res => res.json())
-        .then(data => console.log(data))
+        .then(data => searchFood(data.meals))
     }
 }
 
+const searchFood = foods => {
+    const foodContainer = document.getElementById('food-container');
+    foods.forEach(element => {
+        const li = document.createElement("li");
+        li.innerText = element.strMeal;
+        foodContainer.appendChild(li)
+    });
+}
 
 // event listerners 
 submit.addEventListener('submit', searchMeal);
 
 // food search end
+
+
+
+
+
+
+
+
 
 
     // allFood event handler start
